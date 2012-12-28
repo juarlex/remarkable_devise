@@ -5,7 +5,7 @@ module Remarkable
         protected
         
         def has_column?(column_name)
-          subject_class.column_names.include?(column_name)
+          subject_class.attribute_names.include?(column_name)
         end
 
         def options_match?
